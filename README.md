@@ -6,18 +6,13 @@ dnd5e系统1.2.0版本的备份
 
 在配置nginx环境中，配置文件对应位置添加如下内容，自行搜索位置
 
+```
 server
 	{
 	listen 80;
 	# server_name xxxx.top; 按需求加 换成你的域名
-	
-	
 	#ssl_certificate     C:\phpstudy_pro1\Extensions\Nginx1.16.1\ssl2\kagangtuya.top.crt; ssl配置区域，注释了
-	
-	
 	#ssl_certificate_key C:\phpstudy_pro1\Extensions\Nginx1.16.1\ssl2\kagangtuya.top.key;
-	
-	
 	client_max_body_size 300M;
 	#location /scripts/foundry.js
 	#{
@@ -36,3 +31,5 @@ server
 	proxy_pass http://127.0.0.1:30000;
 	}
 }
+```
+
